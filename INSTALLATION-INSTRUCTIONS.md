@@ -3,7 +3,7 @@
 #### Step 1: Clone the repository
 
 ```bash
-git clone https://github.com/idurar/idurar-erp-crm.git
+git clone https://github.com/VitaliiFedoriv/idurar-erp-crm.git
 ```
 
 ```bash
