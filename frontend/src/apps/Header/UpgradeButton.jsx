@@ -25,7 +25,7 @@ export default function UpgradeButton() {
           window.open(`https://cloud.idurarapp.com`);
         }}
       >
-        {translate('Try Entreprise Version')}
+        {translate('Try Enterprise Version')}
       </Button>
     </Badge>
   );

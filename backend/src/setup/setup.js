@@ -3,9 +3,10 @@ require('dotenv').config({ path: '.env.local' });
 const { globSync } = require('glob');
 const fs = require('fs');
 const { generate: uniqueId } = require('shortid');
+const dbStr = require('../utils/dbStr');
 
 const mongoose = require('mongoose');
-mongoose.connect(process.env.DATABASE);
+mongoose.connect(dbStr.dbUrl);
 
 async function setupApp() {
   try {

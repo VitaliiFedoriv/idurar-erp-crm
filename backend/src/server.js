@@ -13,8 +13,9 @@ if (major < 20) {
 // import environmental variables from our variables.env file
 require('dotenv').config({ path: '.env' });
 require('dotenv').config({ path: '.env.local' });
+const dbStr = require('./utils/dbStr');
 
-mongoose.connect(process.env.DATABASE);
+mongoose.connect(dbStr.dbUrl);
 
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
